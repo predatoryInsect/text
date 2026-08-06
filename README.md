@@ -46,4 +46,24 @@ border=fe8019ff
 [border]
 width=2
 radius=10
+
+```
+
+```
+[key-bindings]
+# Перемещение вниз по списку (Down или Ctrl+j или Ctrl+n)
+next=Down Control+n Control+j
+
+# Перемещение вверх по списку (Up или Ctrl+k или Ctrl+p)
+prev=Up Control+p Control+k
+
+# Очистить всю строку ввода
+delete-line=Control+u
+
+# Удалить одно слово назад
+delete-prev-word=Control+BackSpace Control+w
+
+# Закрыть Fuzzel
+cancel=Escape Control+g
+
 ```
