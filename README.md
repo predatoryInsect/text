@@ -2,49 +2,48 @@
 text-test
 ```
 [main]
-# Шрифт и размер
 font=JetBrains Mono:size=11
-
-# Включаем иконки и указываем тему
 icons-enabled=yes
-icon-theme=Papirus
 
-# Текст перед строкой ввода (Prompt)
+# Указываем нашу новую тему Gruvbox!
+icon-theme=Gruvbox-Plus-Dark
+
 prompt="❯  "
-
-# Терминал для запуска консольных утилит из меню
 terminal=foot -e
 
-# Размеры окна
 width=35
 lines=10
 horizontal-pad=20
 vertical-pad=15
 inner-pad=10
-
-# Размер иконок относительно строки
 image-size-ratio=0.5
-
-# Размещение по центру экрана на отдельном слое
 layer=overlay
 
 [colors]
-# Формат цвета: RRGGBBAA (последние 2 символа — это прозрачность!)
-# 1e1e2edd = цвет темного угля с 85% непрозрачности (полупрозрачный фон)
-background=1e1e2edd
-text=cdd6f4ff
-prompt=bac2deff
-placeholder=7f849cff
-input=cdd6f4ff
-match=f38ba8ff
-selection=313244ff
-selection-text=cdd6f4ff
-selection-match=f38ba8ff
-border=b4befeff
+# Оригинальная палитра Gruvbox Dark (с лёгкой полупрозрачностью)
+# 282828dd — фирменный тёмно-серый фон Gruvbox (dd = ~85% opacity)
+background=282828dd
+
+# Текст (ebdbb2 — светлый бежевый)
+text=ebdbb2ff
+input=ebdbb2ff
+
+# Промпт ❯ и совпадения (fe8019 — сочный оранжевый)
+prompt=fe8019ff
+match=fe8019ff
+
+# Подсказки (928374 — серый)
+placeholder=928374ff
+
+# Выделенный элемент (3c3836 — подложка, fabd2f — жёлтый акцент совпадений)
+selection=3c3836ff
+selection-text=ebdbb2ff
+selection-match=fabd2fff
+
+# Рамка окна (fe8019 — оранжевый акцент)
+border=fe8019ff
 
 [border]
-# Ширина рамки в пикселях
 width=2
-# Скругление углов (в пикселях)
-radius=12
+radius=10
 ```
