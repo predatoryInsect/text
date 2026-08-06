@@ -309,3 +309,56 @@ window#waybar {
     }
 }
 ```
+
+```
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "margin-top": 6,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 8,
+
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "sway/language", "battery", "tray"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": " {:%H:%M}",
+        "format-alt": " {:%A, %d %B %Y г.}"
+    },
+
+    "pulseaudio": {
+        "format": "🔊 {volume}%",
+        "format-bluetooth": "󰂯 {volume}%",
+        "format-muted": "🔇 Muted"
+    },
+
+    "sway/language": {
+        "format": "🌐 {}",
+        "min-length": 5
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "🔋 {capacity}%",
+        "format-charging": "⚡ {capacity}%"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    }
+}
+```
