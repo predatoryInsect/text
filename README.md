@@ -362,3 +362,11 @@ window#waybar {
     }
 }
 ```
+```
+* {
+    /* Порядок важен: сначала ваш основной шрифт, затем шрифты с иконками */
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Brands", Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+```
