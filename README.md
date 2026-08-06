@@ -67,3 +67,9 @@ delete-prev-word=Control+BackSpace Control+w
 cancel=Escape Control+g
 
 ```
+
+```
+curl -fLo /tmp/JetBrainsMono.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+unzip /tmp/JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono/
+rm /tmp/JetBrainsMono.zip
+```
