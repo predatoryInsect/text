@@ -370,3 +370,94 @@ window#waybar {
     font-weight: bold;
 }
 ```
+
+```
+/* Moon Forest */
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: #0b0f0d;
+    color: #d8ddd8;
+}
+
+/* Рабочие столы */
+
+#workspaces {
+    margin-left: 8px;
+}
+
+#workspaces button {
+    color: #6d766f;
+    padding: 0 10px;
+    transition: none;
+}
+
+#workspaces button.active {
+    color: #a4c8a8;
+    background: #111715;
+}
+
+#workspaces button:hover {
+    background: #161d1a;
+    color: #a4c8a8;
+}
+
+/* Часы */
+
+#clock {
+    color: #d8ddd8;
+    font-weight: bold;
+    padding: 0 16px;
+}
+
+/* Язык */
+
+#language {
+    color: #7ea68a;
+    padding: 0 10px;
+}
+
+/* Caps Lock */
+
+#custom-capslock {
+    color: #a4c8a8;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* Батарея */
+
+#battery {
+    color: #d8ddd8;
+    padding: 0 10px;
+}
+
+#battery.warning {
+    color: #c6b07f;
+}
+
+#battery.critical {
+    color: #b06a6a;
+}
+
+/* Кнопка питания */
+
+#custom-power {
+    color: #7ea68a;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#custom-power:hover {
+    color: #a4c8a8;
+}
+```
