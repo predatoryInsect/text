@@ -461,3 +461,35 @@ window#waybar {
     color: #a4c8a8;
 }
 ```
+
+```
+1.
+Command: wc -l audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf
+
+Result:
+  3 audit/nginx/nginx.conf
+  3 audit/ssh/ssh.conf
+  2 audit/systemd/journald.conf
+  8 total
+
+2.
+Command: grep -e "yes" audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf | wc -l
+
+Result: 1
+3.
+Command: grep -e "no" audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf | wc -l
+
+Result: 2
+
+4.
+Command: grep log audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf
+
+Result: audit/nginx/nginx.conf:error_log /var/log/nginx/error.log
+
+5. Сохранить в этот файл все предыдущие результаты:
+Саму команда была записана: cat >> report.txt << EOF
+[Собственно_команда]
+EOF
+
+Запись результата команды: [Собственно_команда/или пайп команд] | cat >> report.txt
+```
