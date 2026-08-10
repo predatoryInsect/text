@@ -463,33 +463,70 @@ window#waybar {
 ```
 
 ```
-1.
-Command: wc -l audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf
-
-Result:
-  3 audit/nginx/nginx.conf
-  3 audit/ssh/ssh.conf
-  2 audit/systemd/journald.conf
-  8 total
-
-2.
-Command: grep -e "yes" audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf | wc -l
-
-Result: 1
-3.
-Command: grep -e "no" audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf | wc -l
-
-Result: 2
-
-4.
-Command: grep log audit/nginx/nginx.conf audit/ssh/ssh.conf audit/systemd/journald.conf
-
-Result: audit/nginx/nginx.conf:error_log /var/log/nginx/error.log
-
-5. Сохранить в этот файл все предыдущие результаты:
-Саму команда была записана: cat >> report.txt << EOF
-[Собственно_команда]
-EOF
-
-Запись результата команды: [Собственно_команда/или пайп команд] | cat >> report.txt
+7zip
+NetworkManager
+Waybar
+alsa-pipewire
+base-system
+bat
+brightnessctl
+btop
+chrony
+cliphist
+cryptsetup
+curl
+dialog
+duf
+elogind
+eza
+fd
+firefox
+font-awesome
+font-awesome6
+foot
+fuzzel
+fzf
+git
+grim
+grub-i386-efi
+grub-x86_64-efi
+htop
+iwd
+jq
+libnotify
+linux
+lvm2
+mako
+mdadm
+neovim
+network-manager-applet
+nnn
+noto-fonts-emoji
+pavucontrol
+pipewire
+polkit
+polkit-gnome
+ripgrep
+rtkit
+slurp
+sway
+swayidle
+swaylock
+tmux
+tree
+unrar
+unzip
+void-docs-browse
+void-live-audio
+void-repo-nonfree
+wget
+wireplumber-elogind
+wl-clipboard
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-wlr
+xdg-user-dirs
+yazi
+zip
+zoxide
 ```
